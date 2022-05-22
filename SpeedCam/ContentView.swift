@@ -44,14 +44,14 @@ struct TopBar: View {
         .padding(.horizontal, 10)
         .padding(.bottom, 50)
         .padding(.top, -6)
-        .background(.thinMaterial)
+        .background(.black.opacity(0.7))
     }
 }
 
 struct BottomBar: View {
     var body: some View {
         VStack(spacing: 20) {
-            HStack {
+            HStack(spacing: 20) {
                 Text("CINEMATIC")
                 Text("VIDEO")
                 Text("PHOTO").foregroundColor(.yellow)
@@ -62,7 +62,7 @@ struct BottomBar: View {
             .frame(maxWidth: .infinity)
             .scaleEffect(x: 1.15)
             .mask {
-                LinearGradient(colors: [.clear, .black, .clear], startPoint: .leading, endPoint: .trailing)
+                LinearGradient(colors: [.clear, .black, .black, .black, .clear], startPoint: .leading, endPoint: .trailing)
             }
 
             HStack {
