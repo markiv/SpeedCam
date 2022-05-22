@@ -40,7 +40,6 @@ struct TopBar: View {
             Image(systemName: "livephoto")
         }
         .font(.system(size: 25, weight: .light))
-        .frame(maxWidth: .infinity)
         .padding(.horizontal, 10)
         .padding(.bottom, 50)
         .padding(.top, -6)
@@ -73,9 +72,9 @@ struct BottomBar: View {
 
                 Circle()
                     .frame(height: 60)
-                    .padding(5)
+                    .padding(4)
                     .background(
-                        Circle().stroke(lineWidth: 3)
+                        Circle().stroke(lineWidth: 4)
                     )
 
                 Image(systemName: "arrow.triangle.2.circlepath.circle.fill")
@@ -83,7 +82,7 @@ struct BottomBar: View {
             }
         }
         .padding()
-        .padding(.bottom, 30)
+        .padding(.bottom, 32)
         .background(.black.opacity(0.8))
     }
 }
