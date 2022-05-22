@@ -1,2 +1,5 @@
 # SpeedCam
-My entry into SwiftUI Series Speedrun
+
+My entry into the [SwiftUI Series Speedrun](https://www.swiftuiseries.com/speedrun).
+
+![Screenshot 1](screenshot1.png)
